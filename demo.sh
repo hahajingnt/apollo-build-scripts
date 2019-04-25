@@ -103,6 +103,7 @@ checkJava
 if [ "$1" = "start" ] ; then
   echo "==== starting service ===="
   echo "Service logging file is $SERVICE_LOG"
+  echo "config_db_url is $apollo_config_db_url"
   export JAVA_OPTS="$SERVER_JAVA_OPTS -Dlogging.file=./apollo-service.log -Dspring.datasource.url=$apollo_config_db_url -Dspring.datasource.username=$apollo_config_db_username -Dspring.datasource.password=$apollo_config_db_password"
 
   if [[ -f $SERVICE_JAR ]]; then
@@ -147,6 +148,7 @@ if [ "$1" = "start" ] ; then
 
   echo "==== starting portal ===="
   echo "Portal logging file is $PORTAL_LOG"
+  echo "portal_db_url is $apollo_portal_db_url"
   export JAVA_OPTS="$PORTAL_JAVA_OPTS -Dlogging.file=./apollo-portal.log -Dserver.port=8070 -Dspring.datasource.url=$apollo_portal_db_url -Dspring.datasource.username=$apollo_portal_db_username -Dspring.datasource.password=$apollo_portal_db_password"
 
   if [[ -f $PORTAL_JAR ]]; then
