@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # apollo config db info
-apollo_config_db_url=jdbc:mysql://pc-bp1mb2vx23p959a42.rwlb.rds.aliyuncs.com:3306/apollo_config_db?characterEncoding=UTF-8
-apollo_config_db_username=apollo
-apollo_config_db_password=Hellosyman1
+# apollo_config_db_url=jdbc:mysql://pc-bp1mb2vx23p959a42.rwlb.rds.aliyuncs.com:3306/apollo_config_db?characterEncoding=UTF-8
+# apollo_config_db_username=apollo
+# apollo_config_db_password=Hellosyman1
 
-# apollo portal db info
-apollo_portal_db_url=jdbc:mysql://pc-bp1mb2vx23p959a42.rwlb.rds.aliyuncs.com:3306/apollo_portal_db?characterEncoding=UTF-8
-apollo_portal_db_username=apollo
-apollo_portal_db_password=Hellosyman1
+# # apollo portal db info
+# apollo_portal_db_url=jdbc:mysql://pc-bp1mb2vx23p959a42.rwlb.rds.aliyuncs.com:3306/apollo_portal_db?characterEncoding=UTF-8
+# apollo_portal_db_username=apollo
+# apollo_portal_db_password=Hellosyman1
 
 # =============== Please do not modify the following content =============== #
 
