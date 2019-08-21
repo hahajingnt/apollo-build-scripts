@@ -125,12 +125,12 @@ if [ "$1" = "start" ] ; then
   printf "Waiting for config service startup"
   checkServerAlive $config_server_url
 
-  rc=$?
-  if [[ $rc != 0 ]];
-  then
-    printf "\nConfig service failed to start in $rc seconds! Please check $SERVICE_LOG for more information.\n"
-    exit 1;
-  fi
+#   rc=$?
+#   if [[ $rc != 0 ]];
+#   then
+#     printf "\nConfig service failed to start in $rc seconds! Please check $SERVICE_LOG for more information.\n"
+#     exit 1;
+#   fi
 
   printf "\nConfig service started. You may visit $config_server_url for service status now!\n"
 
