@@ -137,12 +137,12 @@ if [ "$1" = "start" ] ; then
   printf "Waiting for admin service startup"
   checkServerAlive $admin_server_url
 
-  rc=$?
-  if [[ $rc != 0 ]];
-  then
-    printf "\nAdmin service failed to start in $rc seconds! Please check $SERVICE_LOG for more information.\n"
-    exit 1;
-  fi
+#   rc=$?
+#   if [[ $rc != 0 ]];
+#   then
+#     printf "\nAdmin service failed to start in $rc seconds! Please check $SERVICE_LOG for more information.\n"
+#     exit 1;
+#   fi
 
   printf "\nAdmin service started\n"
 
