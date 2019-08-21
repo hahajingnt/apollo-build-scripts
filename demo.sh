@@ -170,12 +170,12 @@ if [ "$1" = "start" ] ; then
   printf "Waiting for portal startup"
   checkServerAlive $portal_url
 
-  rc=$?
-  if [[ $rc != 0 ]];
-  then
-    printf "\nPortal failed to start in $rc seconds! Please check $PORTAL_LOG for more information.\n"
-    exit 1;
-  fi
+#   rc=$?
+#   if [[ $rc != 0 ]];
+#   then
+#     printf "\nPortal failed to start in $rc seconds! Please check $PORTAL_LOG for more information.\n"
+#     exit 1;
+#   fi
 
   printf "\nPortal started. You can visit $portal_url now!\n"
 
