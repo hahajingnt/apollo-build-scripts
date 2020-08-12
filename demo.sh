@@ -125,24 +125,24 @@ if [ "$1" = "start" ] ; then
   printf "Waiting for config service startup"
   checkServerAlive $config_server_url
 
-#   rc=$?
-#   if [[ $rc != 0 ]];
-#   then
-#     printf "\nConfig service failed to start in $rc seconds! Please check $SERVICE_LOG for more information.\n"
-#     exit 1;
-#   fi
+  rc=$?
+  if [[ $rc != 0 ]];
+  then
+    printf "\nConfig service failed to start in $rc seconds! Please check $SERVICE_LOG for more information.\n"
+    exit 1;
+  fi
 
   printf "\nConfig service started. You may visit $config_server_url for service status now!\n"
 
   printf "Waiting for admin service startup"
   checkServerAlive $admin_server_url
 
-#   rc=$?
-#   if [[ $rc != 0 ]];
-#   then
-#     printf "\nAdmin service failed to start in $rc seconds! Please check $SERVICE_LOG for more information.\n"
-#     exit 1;
-#   fi
+  rc=$?
+  if [[ $rc != 0 ]];
+  then
+    printf "\nAdmin service failed to start in $rc seconds! Please check $SERVICE_LOG for more information.\n"
+    exit 1;
+  fi
 
   printf "\nAdmin service started\n"
 
@@ -170,12 +170,12 @@ if [ "$1" = "start" ] ; then
   printf "Waiting for portal startup"
   checkServerAlive $portal_url
 
-#   rc=$?
-#   if [[ $rc != 0 ]];
-#   then
-#     printf "\nPortal failed to start in $rc seconds! Please check $PORTAL_LOG for more information.\n"
-#     exit 1;
-#   fi
+  rc=$?
+  if [[ $rc != 0 ]];
+  then
+    printf "\nPortal failed to start in $rc seconds! Please check $PORTAL_LOG for more information.\n"
+    exit 1;
+  fi
 
   printf "\nPortal started. You can visit $portal_url now!\n"
 
